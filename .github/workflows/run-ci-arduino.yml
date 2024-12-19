@@ -26,7 +26,7 @@ jobs:
       - name: Create a depend.list file
         run: |
           # eg: echo "<repo>" >> depend.list
-          echo "PaulStoffregen/TimerOne" >> depend.list
+          echo "Lesords/TimerOne" >> depend.list
 
       - name: Create a ignore.list file
         run: |
@@ -43,7 +43,7 @@ jobs:
           echo "Stopwatch,rp2040:rp2040:seeed_xiao_rp2040" >> ignore.list
           echo "ClockDisplay,rp2040:rp2040:seeed_xiao_rp2350" >> ignore.list
           echo "Stopwatch,rp2040:rp2040:seeed_xiao_rp2350" >> ignore.list
-
+      
       - name: Build sketch
         run: ./ci/tools/compile.sh
 
